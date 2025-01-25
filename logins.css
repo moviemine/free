@@ -1,0 +1,3365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: auto;
+    background-color: #000000;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.left {
+    width: 50%;
+    height: auto;
+    background-color: #0056ff;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+}
+
+.left .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.left .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.left .logo h2 {
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.left h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.left p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.left img {
+    width: 80%;
+    max-width: 5 50px;
+}
+
+.right {
+    width: 70%;
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 130px 60px 25%;
+    position: relative;
+}
+
+.right .top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.right .top-right a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.right .top-right a:hover {
+    text-decoration: underline;
+}
+
+.right h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.right p {
+    margin-bottom: 25px;
+    color: #bbb;
+    font-size: 1.1em;
+}
+
+.right .metamask-btn {
+    width: 50%;
+    background-color:transparent;
+    color: white;
+    border: 1px solid #555;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+.right .metamask-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.right .metamask-btn:hover {
+    background-color: #444;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right input[type="text"], .right input[type="password"] {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+}
+
+
+.right input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.right label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.right a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.right a:hover {
+    text-decoration: underline;
+}
+
+.right button {
+    width: 70%;
+    padding: 12px;
+    background-color: #0056ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.right button:hover {
+    background-color: #0041cc;
+}
+
+.right .footer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+.right .footer a {
+    color: #bbb;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.right .footer a:hover {
+    text-decoration: underline;
+}
+
+
+.centeral{
+    justify-content: center;
+}
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+.password-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.password-row label {
+    margin-right: 10px;
+}
+.password-row a {
+    width: 50%;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9em;
+}
+.password-row a:hover {
+    text-decoration: underline;
+}
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+.footer-bar {
+    display: none;
+}
+.footer-barr {
+    position: relative;
+    margin-top: -30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #bbb;
+    padding: 10px 20px 30px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+}
+
+.footer-barr span {
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+.footer-barr a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-barr a:hover {
+    text-decoration: underline;
+}
+
+.languagee-selector {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: auto; /* Push to the right */
+}
+
+.languagee-selector img {
+    width: 20px;
+    height: 15px;
+    border-radius: 2px; /* Optional for rounded edges */
+}
+
+.themee-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #444;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px; /* Space between flag and moon icon */
+}
+
+.themee-toggle i {
+    color: #fff;
+    font-size: 16px;
+}
+
+.themee-toggle:hover {
+    background-color: #555;
+}
+
+
+/******** row for passwar and forget *****/
+/* Improved "Remember Me" Checkbox */
+.checkbox-container {
+display: flex;
+align-items: center;
+gap: 7px;
+font-size: 0.95em;
+color: #bbb;
+cursor: pointer;
+}
+
+.checkbox-container input[type="checkbox"] {
+width: 15px;
+height: 15px;
+margin-left: 10px;
+accent-color: #0056ff;
+cursor: pointer;
+}
+
+
+
+
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+
+.divider {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #555;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+    margin: 0 10px; /* Spacing between text and lines */
+}
+
+@media (min-width: 290px) and (max-width: 550px) {
+    .footer-bar {
+        position: relative;
+        margin-top: -30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #000;
+        color: #bbb;
+        padding: 10px 20px 30px 20px;
+        font-family: Arial, sans-serif;
+        font-size: 1em;
+    }
+
+    .footer-bar span {
+        color: #bbb;
+        font-size: 0.9em;
+    }
+
+    .footer-bar a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .footer-bar a:hover {
+        text-decoration: underline;
+    }
+
+    .language-selector {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-left: auto; /* Push to the right */
+    }
+
+    .language-selector img {
+        width: 20px;
+        height: 15px;
+        border-radius: 2px; /* Optional for rounded edges */
+    }
+
+    .theme-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        background-color: #444;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-left: 10px; /* Space between flag and moon icon */
+    }
+
+    .theme-toggle i {
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .theme-toggle:hover {
+        background-color: #555;
+    }
+
+
+    /******** row for passwar and forget *****/
+ /* Improved "Remember Me" Checkbox */
+ .checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.95em;
+    color: #bbb;
+    cursor: pointer;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    accent-color: #0056ff;
+    cursor: pointer;
+}
+
+}
+
+@media (min-width: 550px) and (max-width: 780px) {
+    .footer-bar {
+        position: relative;
+        margin-top: -30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #000;
+        color: #bbb;
+        padding: 10px 20px 30px 20px;
+        font-family: Arial, sans-serif;
+        font-size: 1em;
+    }
+
+    .footer-bar span {
+        color: #bbb;
+        font-size: 0.9em;
+    }
+
+    .footer-bar a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .footer-bar a:hover {
+        text-decoration: underline;
+    }
+
+    .language-selector {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-left: auto; /* Push to the right */
+    }
+
+    .language-selector img {
+        width: 20px;
+        height: 15px;
+        border-radius: 2px; /* Optional for rounded edges */
+    }
+
+    .theme-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        background-color: #444;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-left: 10px; /* Space between flag and moon icon */
+    }
+
+    .theme-toggle i {
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .theme-toggle:hover {
+        background-color: #555;
+    }
+
+
+    /******** row for passwar and forget *****/
+ /* Improved "Remember Me" Checkbox */
+ .checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.95em;
+    color: #bbb;
+    cursor: pointer;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    accent-color: #0056ff;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Styling */
+.footer {
+    background-color: #000;
+    color: #bbb;
+    text-align: center;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 0.85em;
+    position: fixed; /* Keeps footer at the bottom */
+    bottom: 0;
+    width: 100%; /* Ensures full width */
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* For smaller screens */
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer .social-icons a {
+    color: #bbb;
+    font-size: 1em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #007bff;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.8em;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 100px) {
+    .footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer p {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 780px) {
+    .footer-bar {
+        position: relative;
+        margin-top: -30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #000;
+        color: #bbb;
+        padding: 10px 20px 30px 20px;
+        font-family: Arial, sans-serif;
+        font-size: 1em;
+    }
+
+    .footer-bar span {
+        color: #bbb;
+        font-size: 0.9em;
+    }
+
+    .footer-bar a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .footer-bar a:hover {
+        text-decoration: underline;
+    }
+
+    .language-selector {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-left: auto; /* Push to the right */
+    }
+
+    .language-selector img {
+        width: 20px;
+        height: 15px;
+        border-radius: 2px; /* Optional for rounded edges */
+    }
+
+    .theme-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        background-color: #444;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-left: 10px; /* Space between flag and moon icon */
+    }
+
+    .theme-toggle i {
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .theme-toggle:hover {
+        background-color: #555;
+    }
+
+
+    /******** row for passwar and forget *****/
+ /* Improved "Remember Me" Checkbox */
+ .checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.95em;
+    color: #bbb;
+    cursor: pointer;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    accent-color: #0056ff;
+    cursor: pointer;
+}
+
+}
+
+@media (min-width: 290px) and (max-width: 350px) {    
+    .left {
+        display: none; /* Hide the left side */
+    }
+
+/* Eye icon styling */
+.password-wrapper .toggle-password {
+    position: absolute; /* Position relative to the wrapper */
+    top: 50%; /* Center vertically */
+    right: 10px; /* Distance from the right edge */
+    transform: translateY(-50%); /* Ensure proper alignment */
+    cursor: pointer; /* Pointer for interactivity */
+    color: #bbb; /* Icon color */
+    font-size: 18px; /* Icon size */
+}
+
+/* Optional hover effect */
+.password-wrapper .toggle-password:hover {
+    color: #bbb; /* Highlight on hover */
+}
+
+    
+    
+    body {   
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: #fff;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .centeral{
+        justify-content: center;
+    }
+
+
+.right .logo {
+    flex-direction: row;
+    position: absolute;
+    top: -10%;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+.right .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.right .logo h2 {
+    color: #d3d3d3;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 10px;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.gapp{
+    text-align: center;
+}
+
+#non {
+    display: flex;          /* Flexbox layout */
+    flex-direction: row;    /* Row direction (default) */
+    align-items: center;    /* Align items vertically */
+    justify-content: center; /* Center the content horizontally */
+    gap: 10px;              /* Add space between the span and the link */
+}
+
+#non span {
+    color: #ffffff;         /* White text color */
+    font-size: 1em;         /* Adjust font size as needed */
+    text-decoration: none;
+}
+
+#non a {
+    color: #007bff;         /* Blue text for the link */
+    text-decoration: none;  /* Remove underline */
+    font-weight: bold;      /* Optional: Make the link text bold */
+}
+
+#non a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+
+
+
+    .right {
+        margin-top: 10%;
+        width: 100%; /* Right side takes full width */
+        background-color: #000;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        padding: 20px 10px  0px 10px;
+        position: relative;
+    }
+    
+.right .top-right {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+
+.right .top-right a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.right .top-right a:hover {
+    text-decoration: underline;
+}
+
+.right h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.right p {
+    margin-bottom: 25px;
+    color: #bbb;
+    font-size: 1.1em;
+}
+
+.right .metamask-btn {
+    width: 100%;
+    background-color:transparent;
+    color: white;
+    border: 1px solid #555;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+.right .metamask-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.right .metamask-btn:hover {
+    background-color: #444;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right input[type="text"], .right input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+}
+
+
+.right input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.right label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.right a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.right a:hover {
+    text-decoration: underline;
+}
+
+.right button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0056ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.right button:hover {
+    background-color: #0041cc;
+}
+
+.right .footer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+.right .footer a {
+    color: #bbb;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.right .footer a:hover {
+    text-decoration: underline;
+}
+
+
+.centeral{
+    justify-content: center;
+}
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+.password-row {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.password-row label {
+    margin-right: 10px;
+}
+.password-row a {
+    width: 50%;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9em;
+}
+.password-row a:hover {
+    text-decoration: underline;
+}
+
+/******** row for passwar and forget *****/
+
+
+
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+
+.divider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #555;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+    margin: 0 10px; /* Spacing between text and lines */
+}
+
+
+}
+
+@media (min-width: 350px) and (max-width: 450px) {
+    .left {
+        display: none; /* Hide the left side */
+    }
+    
+    
+
+/* Eye icon styling */
+.password-wrapper .toggle-password {
+    position: absolute; /* Position relative to the wrapper */
+    top: 50%; /* Center vertically */
+    right: 10px; /* Distance from the right edge */
+    transform: translateY(-50%); /* Ensure proper alignment */
+    cursor: pointer; /* Pointer for interactivity */
+    color: #bbb; /* Icon color */
+    font-size: 18px; /* Icon size */
+}
+
+/* Optional hover effect */
+.password-wrapper .toggle-password:hover {
+    color: #bbb; /* Highlight on hover */
+}
+
+    
+    
+    body {   
+        margin-top: 1%;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: #fff;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .centeral{
+        justify-content: center;
+    }
+
+
+.right .logo {
+    flex-direction: row;
+    position: absolute;
+    top: -10%;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+.right .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.right .logo h2 {
+    color: #d3d3d3;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 10px;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.gapp{
+    text-align: center;
+}
+
+    .centeral{
+        justify-content: center;
+    }
+
+
+#non {
+    display: flex;          /* Flexbox layout */
+    flex-direction: row;    /* Row direction (default) */
+    align-items: center;    /* Align items vertically */
+    justify-content: center; /* Center the content horizontally */
+    gap: 10px;              /* Add space between the span and the link */
+}
+
+#non span {
+    color: #ffffff;         /* White text color */
+    font-size: 1em;         /* Adjust font size as needed */
+    text-decoration: none;
+}
+
+#non a {
+    color: #007bff;         /* Blue text for the link */
+    text-decoration: none;  /* Remove underline */
+    font-weight: bold;      /* Optional: Make the link text bold */
+}
+
+#non a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+
+    .right {
+        width: 100%; /* Right side takes full width */
+        background-color: #000;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        padding: 30px 20px 10px 20px;
+        position: relative;
+    }
+    
+.right .top-right {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+
+.right .top-right a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.right .top-right a:hover {
+    text-decoration: underline;
+}
+
+.right h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.right p {
+    margin-bottom: 25px;
+    color: #bbb;
+    font-size: 1.1em;
+}
+
+.right .metamask-btn {
+    width: 100%;
+    background-color:transparent;
+    color: white;
+    border: 1px solid #555;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+.right .metamask-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.right .metamask-btn:hover {
+    background-color: #444;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right input[type="text"], .right input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+}
+
+
+.right input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.right label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.right a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.right a:hover {
+    text-decoration: underline;
+}
+
+.right button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0056ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.right button:hover {
+    background-color: #0041cc;
+}
+
+.right .footer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+.right .footer a {
+    color: #bbb;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.right .footer a:hover {
+    text-decoration: underline;
+}
+
+
+.centeral{
+    justify-content: center;
+}
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+.password-row {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.password-row label {
+    margin-right: 10px;
+}
+.password-row a {
+    width: 50%;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9em;
+}
+.password-row a:hover {
+    text-decoration: underline;
+}
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+
+.divider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #555;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+    margin: 0 10px; /* Spacing between text and lines */
+}
+
+
+}
+
+@media (min-width: 450px) and (max-width: 550px) {
+    .left {
+        display: none; /* Hide the left side */
+    }
+    
+    
+
+/* Eye icon styling */
+.password-wrapper .toggle-password {
+    position: absolute; /* Position relative to the wrapper */
+    top: 50%; /* Center vertically */
+    right: 10px; /* Distance from the right edge */
+    transform: translateY(-50%); /* Ensure proper alignment */
+    cursor: pointer; /* Pointer for interactivity */
+    color: #bbb; /* Icon color */
+    font-size: 18px; /* Icon size */
+}
+
+/* Optional hover effect */
+.password-wrapper .toggle-password:hover {
+    color: #bbb; /* Highlight on hover */
+}
+
+    
+    
+    body {   
+        margin-top: 0%;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: #fff;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .centeral{
+        justify-content: center;
+    }
+
+
+
+.gapp{
+    text-align: center;
+}
+
+
+    .centeral{
+        justify-content: center;
+    }
+
+
+#non {
+    display: flex;          /* Flexbox layout */
+    flex-direction: row;    /* Row direction (default) */
+    align-items: center;    /* Align items vertically */
+    justify-content: center; /* Center the content horizontally */
+    gap: 10px;              /* Add space between the span and the link */
+}
+
+#non span {
+    color: #ffffff;         /* White text color */
+    font-size: 1em;         /* Adjust font size as needed */
+    text-decoration: none;
+}
+
+#non a {
+    color: #007bff;         /* Blue text for the link */
+    text-decoration: none;  /* Remove underline */
+    font-weight: bold;      /* Optional: Make the link text bold */
+}
+
+#non a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1.2em;
+    }   
+
+    .right {
+        width: 90%; /* Right side takes full width */
+        background-color: #000;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        padding: 50px 10px 10px 50px;
+        position: relative;
+    }
+    
+.right .top-right {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+
+.right .top-right a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.right .top-right a:hover {
+    text-decoration: underline;
+}
+
+.right h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.right p {
+    margin-bottom: 25px;
+    color: #bbb;
+    font-size: 1.1em;
+}
+
+.right .metamask-btn {
+    width: 100%;
+    background-color:transparent;
+    color: white;
+    border: 1px solid #555;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+.right .metamask-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.right .metamask-btn:hover {
+    background-color: #444;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right input[type="text"], .right input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+}
+
+
+.right input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.right label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.right a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.right a:hover {
+    text-decoration: underline;
+}
+
+.right button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0056ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.right button:hover {
+    background-color: #0041cc;
+}
+
+.right .footer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+.right .footer a {
+    color: #bbb;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.right .footer a:hover {
+    text-decoration: underline;
+}
+
+
+.centeral{
+    justify-content: center;
+}
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+.password-row {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.password-row label {
+    margin-right: 10px;
+}
+.password-row a {
+    width: 50%;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9em;
+}
+.password-row a:hover {
+    text-decoration: underline;
+}
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+
+.divider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #555;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+    margin: 0 10px; /* Spacing between text and lines */
+}
+
+
+}
+
+@media (min-width: 550px) and (max-width: 650px) {
+    .left {
+        display: none; /* Hide the left side */
+    }
+    
+    
+
+/* Eye icon styling */
+.password-wrapper .toggle-password {
+    position: absolute; /* Position relative to the wrapper */
+    top: 50%; /* Center vertically */
+    right: 10px; /* Distance from the right edge */
+    transform: translateY(-50%); /* Ensure proper alignment */
+    cursor: pointer; /* Pointer for interactivity */
+    color: #bbb; /* Icon color */
+    font-size: 18px; /* Icon size */
+}
+
+/* Optional hover effect */
+.password-wrapper .toggle-password:hover {
+    color: #bbb; /* Highlight on hover */
+}
+
+    
+    
+    body {   
+        margin-top: 0%;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: #fff;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .centeral{
+        justify-content: center;
+    }
+
+
+
+.gapp{
+    text-align: center;
+}
+
+
+    .centeral{
+        justify-content: center;
+    }
+
+
+#non {
+    display: flex;          /* Flexbox layout */
+    flex-direction: row;    /* Row direction (default) */
+    align-items: center;    /* Align items vertically */
+    justify-content: center; /* Center the content horizontally */
+    gap: 10px;              /* Add space between the span and the link */
+}
+
+#non span {
+    color: #ffffff;         /* White text color */
+    font-size: 1em;         /* Adjust font size as needed */
+    text-decoration: none;
+}
+
+#non a {
+    color: #007bff;         /* Blue text for the link */
+    text-decoration: none;  /* Remove underline */
+    font-weight: bold;      /* Optional: Make the link text bold */
+}
+
+#non a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1.2em;
+    }
+
+    .right {
+        width: 100%; /* Right side takes full width */
+        background-color: #000;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        padding: 40px 90px 10px 90px;
+        position: relative;
+    }
+    
+.right .top-right {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+
+.right .top-right a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.right .top-right a:hover {
+    text-decoration: underline;
+}
+
+.right h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.right p {
+    margin-bottom: 25px;
+    color: #bbb;
+    font-size: 1.1em;
+}
+
+.right .metamask-btn {
+    width: 100%;
+    background-color:transparent;
+    color: white;
+    border: 1px solid #555;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+.right .metamask-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.right .metamask-btn:hover {
+    background-color: #444;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right input[type="text"], .right input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+}
+
+
+.right input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.right label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.right a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.right a:hover {
+    text-decoration: underline;
+}
+
+.right button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0056ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.right button:hover {
+    background-color: #0041cc;
+}
+
+.right .footer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+.right .footer a {
+    color: #bbb;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.right .footer a:hover {
+    text-decoration: underline;
+}
+
+
+.centeral{
+    justify-content: center;
+}
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+.password-row {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.password-row label {
+    margin-right: 10px;
+}
+.password-row a {
+    width: 50%;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9em;
+}
+.password-row a:hover {
+    text-decoration: underline;
+}
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+
+.divider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #555;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+    margin: 0 10px; /* Spacing between text and lines */
+}
+
+
+}
+
+
+@media (min-width: 650px) and (max-width: 780px) {
+    .left {
+        display: none; /* Hide the left side */
+    }
+    
+    
+
+/* Eye icon styling */
+.password-wrapper .toggle-password {
+    position: absolute; /* Position relative to the wrapper */
+    top: 50%; /* Center vertically */
+    right: 10px; /* Distance from the right edge */
+    transform: translateY(-50%); /* Ensure proper alignment */
+    cursor: pointer; /* Pointer for interactivity */
+    color: #bbb; /* Icon color */
+    font-size: 18px; /* Icon size */
+}
+
+/* Optional hover effect */
+.password-wrapper .toggle-password:hover {
+    color: #bbb; /* Highlight on hover */
+}
+
+    
+    
+    body {   
+        margin-top: 0%;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: #fff;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .centeral{
+        justify-content: center;
+    }
+
+
+
+.gapp{
+    text-align: center;
+}
+
+
+    .centeral{
+        justify-content: center;
+    }
+
+#non {
+    display: flex;          /* Flexbox layout */
+    flex-direction: row;    /* Row direction (default) */
+    align-items: center;    /* Align items vertically */
+    justify-content: center; /* Center the content horizontally */
+    gap: 10px;              /* Add space between the span and the link */
+}
+
+#non span {
+    color: #ffffff;         /* White text color */
+    font-size: 1em;         /* Adjust font size as needed */
+    text-decoration: none;
+}
+
+#non a {
+    color: #007bff;         /* Blue text for the link */
+    text-decoration: none;  /* Remove underline */
+    font-weight: bold;      /* Optional: Make the link text bold */
+}
+
+#non a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+    .right {
+        width: 100%; /* Right side takes full width */
+        background-color: #000;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        padding: 40px 120px 10px 120px;
+        position: relative;
+    }
+    
+.right .top-right {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+
+.right .top-right a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.right .top-right a:hover {
+    text-decoration: underline;
+}
+
+.right h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.right p {
+    margin-bottom: 25px;
+    color: #bbb;
+    font-size: 1.1em;
+}
+
+.right .metamask-btn {
+    width: 100%;
+    background-color:transparent;
+    color: white;
+    border: 1px solid #555;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+.right .metamask-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.right .metamask-btn:hover {
+    background-color: #444;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right input[type="text"], .right input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+}
+
+
+.right input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.right label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.right a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.right a:hover {
+    text-decoration: underline;
+}
+
+.right button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0056ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.right button:hover {
+    background-color: #0041cc;
+}
+
+.right .footer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+.right .footer a {
+    color: #bbb;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.right .footer a:hover {
+    text-decoration: underline;
+}
+
+
+.centeral{
+    justify-content: center;
+}
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+.password-row {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.password-row label {
+    margin-right: 10px;
+}
+.password-row a {
+    width: 50%;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9em;
+}
+.password-row a:hover {
+    text-decoration: underline;
+}
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+
+.divider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #555;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+    margin: 0 10px; /* Spacing between text and lines */
+}
+
+
+}
+
+@media (min-width: 781px) and (max-width: 1000px) {
+    .footer-bar {
+        display: none;
+    }
+    .footer-barr {
+        position: relative;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        color: #bbb;
+        padding: 10px 20px 30px 20px;
+        font-family: Arial, sans-serif;
+        font-size: 1em;
+    }
+
+    .footer-barr span {
+        color: #bbb;
+        font-size: 0.9em;
+    }
+
+    .footer-barr a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .footer-barr a:hover {
+        text-decoration: underline;
+    }
+
+    .languagee-selector {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-left: auto; /* Push to the right */
+    }
+
+    .languagee-selector img {
+        width: 20px;
+        height: 15px;
+        border-radius: 2px; /* Optional for rounded edges */
+    }
+
+    .themee-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        background-color: #444;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-left: 10px; /* Space between flag and moon icon */
+    }
+
+    .theme-toggle i {
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .theme-toggle:hover {
+        background-color: #555;
+    }
+
+
+    /******** row for passwar and forget *****/
+ /* Improved "Remember Me" Checkbox */
+ .checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.95em;
+    color: #bbb;
+    cursor: pointer;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    accent-color: #0056ff;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/* Footer Styling */
+.footer {
+    margin-bottom: -20px;
+    overflow: hidden;
+    text-align: right;
+    gap: 0px;
+    padding: 0px -10px;
+    font-family: Arial, sans-serif;
+    position: fixed; /* Keeps footer at the bottom */
+    bottom: 0;
+    width: 26%; /* Ensures full width */
+}
+
+
+.footer p:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.footer p {
+    text-decoration: none;
+    color: #007bff;
+    margin: 0;
+    font-size: 0.7em;
+    text-align: right;
+}
+
+
+
+
+
+
+}
+
+@media (max-width: 780px) {
+    .footer-barr {
+        display: none;
+    }
+}
+    @media (min-width: 780px) {
+  
+
+/* Eye icon styling */
+.password-wrapper .toggle-password {
+    position: absolute; /* Position relative to the wrapper */
+    top: 50%; /* Center vertically */
+    right: 51px; /* Distance from the right edge */
+    transform: translateY(-50%); /* Ensure proper alignment */
+    cursor: pointer; /* Pointer for interactivity */
+    color: #bbb; /* Icon color */
+    font-size: 18px; /* Icon size */
+}
+
+/* Optional hover effect */
+.password-wrapper .toggle-password:hover {
+    color: #bbb; /* Highlight on hover */
+}
+
+    
+    
+    body {   
+        margin-top: 0%;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: #fff;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+
+
+    #non {
+        display: flex;          /* Flexbox layout */
+        flex-direction: row;    /* Row direction (default) */
+        align-items: center;    /* Align items vertically */
+        justify-content: center; /* Center the content horizontally */
+        gap: 10px;              /* Add space between the span and the link */
+    }
+    
+    #non span {
+        color: #ffffff;         /* White text color */
+        font-size: 1em;         /* Adjust font size as needed */
+        text-decoration: none;
+    }
+    
+    #non a {
+        color: #007bff;         /* Blue text for the link */
+        text-decoration: none;  /* Remove underline */
+        font-weight: bold;      /* Optional: Make the link text bold */
+    }
+    
+    #non a:hover {
+        text-decoration: underline; /* Add underline on hover */
+    }
+    
+
+#none{
+    display: none;
+}
+
+
+.left {
+    width: 40%;
+    height: auto;
+    background-color: #0056ff;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Adjust alignment */
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px; /* Reduce padding */
+    position: relative;
+    gap: 20px; /* Ensure consistent spacing */
+}
+
+.left .logo {
+    position: absolute;
+    top: 20px; /* Keep logo closer to the top */
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+.left .logo img {
+    opacity: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.left .logo h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.left #ids {
+    text-align: left;
+    margin-top: 120px; /* Adjust gap between logo and content */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Set consistent spacing between elements */
+}
+
+.left #ids h1 {
+    color: rgba(255, 255, 255, 0.799);
+    font-weight: 1;
+    text-align: left;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.left #ids p {
+    font-weight: bold;
+    font-size: 1.5em; /* Adjust font size */
+    margin-bottom: 20px; /* Slightly reduce gap */
+}
+
+.left #ids img {
+    width: 110%;
+    max-width: 750px;
+    margin-top: 10px; /* Add controlled spacing below */
+}
+
+
+
+
+
+
+
+
+.right {
+    width: 70%;
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 20px 10px 8%;
+    position: relative;
+}
+
+.gapp{
+    border-top: 10px;
+    text-align: center;
+}
+.right h2 {
+    font-size: 1.7em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.right p {
+    margin-bottom: 20px;
+    color: #bbb;
+    font-size: 1em;
+}
+
+.right .metamask-btn {
+    width: 90%;
+    background-color:transparent;
+    color: white;
+    border: 1px solid #555;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 100;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-size: 1em;
+}
+.right input[type="text"], .right input[type="password"] {
+    width: 90%;
+    padding: 10px 14px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+}
+.right button {
+    width: 90%;
+    padding: 12px;
+    background-color: #0056ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.right .metamask-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+.password-row a {
+    width: 40%;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9em;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    accent-color: #0056ff;
+    cursor: pointer;
+}
+}
+
+@media (min-width: 1001px) and (max-width: 1500px) {
+    .footer-bar {
+        display: none;
+    }
+    .footer-barr {
+        position: relative;
+        margin-top: -50px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        color: #bbb;
+        padding: 10px 20px 30px 20px;
+        font-family: Arial, sans-serif;
+        font-size: 1em;
+    }
+
+    .footer-barr span {
+        color: #bbb;
+        font-size: 0.9em;
+    }
+
+    .footer-barr a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .footer-barr a:hover {
+        text-decoration: underline;
+    }
+
+    .languagee-selector {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-left: auto; /* Push to the right */
+    }
+
+    .languagee-selector img {
+        width: 20px;
+        height: 15px;
+        border-radius: 2px; /* Optional for rounded edges */
+    }
+
+    .themee-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        background-color: #444;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-left: 10px; /* Space between flag and moon icon */
+    }
+
+    .theme-toggle i {
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .theme-toggle:hover {
+        background-color: #555;
+    }
+
+
+    /******** row for passwar and forget *****/
+ /* Improved "Remember Me" Checkbox */
+ .checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.95em;
+    color: #bbb;
+    cursor: pointer;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    accent-color: #0056ff;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/* Footer Styling */
+.footer {
+    margin-bottom: -10px;
+    overflow: hidden;
+    text-align: right;
+    gap: 0px;
+    padding: 0px -10px;
+    font-family: Arial, sans-serif;
+    position: fixed; /* Keeps footer at the bottom */
+    bottom: 0;
+    width: 26%; /* Ensures full width */
+}
+
+
+.footer p:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.footer p {
+    text-decoration: none;
+    color: #007bff;
+    margin: 0;
+    font-size: 0.7em;
+    text-align: right;
+}
+
+
+
+
+
+
+}
+
+@media (min-width: 1000px) and (max-width: 1200px){
+      
+
+    /* Eye icon styling */
+    .password-wrapper .toggle-password {
+        position: absolute; /* Position relative to the wrapper */
+        top: 50%; /* Center vertically */
+        right: 51px; /* Distance from the right edge */
+        transform: translateY(-50%); /* Ensure proper alignment */
+        cursor: pointer; /* Pointer for interactivity */
+        color: #bbb; /* Icon color */
+        font-size: 18px; /* Icon size */
+    }
+    
+    /* Optional hover effect */
+    .password-wrapper .toggle-password:hover {
+        color: #bbb; /* Highlight on hover */
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+        
+        
+        body {   
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+        }
+
+    .left {
+        width: 40%;
+        height: auto;
+        background-color: #0056ff;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Adjust alignment */
+        align-items: center;
+        text-align: center;
+        padding: 30px 20px; /* Reduce padding */
+        position: relative;
+        gap: 20px; /* Ensure consistent spacing */
+    }
+    
+    .left .logo {
+        position: absolute;
+        top: 20px; /* Keep logo closer to the top */
+        left: 20px;
+        display: flex;
+        align-items: center;
+        gap: 0px;
+    }
+    
+    .left .logo img {
+        opacity: 100%;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .left .logo h2 {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    
+    .left #ids {
+        text-align: left;
+        margin-top: 120px; /* Adjust gap between logo and content */
+        display: flex;
+        flex-direction: column;
+        gap: 15px; /* Set consistent spacing between elements */
+    }
+    
+    .left #ids h1 {
+        color: rgba(255, 255, 255, 0.799);
+        font-weight: 1;
+        text-align: left;
+        font-size: 1em;
+        margin-bottom: 5px;
+    }
+    
+    .left #ids p {
+        font-weight: bold;
+        font-size: 1.5em; /* Adjust font size */
+        margin-bottom: 20px; /* Slightly reduce gap */
+    }
+    
+    .left #ids img {
+        width: 110%;
+        max-width: 750px;
+        margin-top: 10px; /* Add controlled spacing below */
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    .right {
+        width: 70%;
+        background-color: #000;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 20px 10px 8%;
+        position: relative;
+    }
+    
+    .gapp{
+        text-align: center;
+    }
+    .right h2 {
+        border-left: -110px;
+        font-size: 1.7em;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+    
+    .right p {
+        border-left: -110px;
+        margin-bottom: 20px;
+        color: #bbb;
+        font-size: 1em;
+    }
+    
+    .footer-bar{
+        display: none;
+    }
+       
+        .gapp{
+            text-align: left;
+        }
+          
+        .right {
+            width: 70%;
+            background-color: #000;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 50px 30px 60px 10%;
+            position: relative;
+        }
+        
+        
+        .right .metamask-btn {
+            width: 80%;
+            background-color:transparent;
+            color: white;
+            border: 1px solid #555;
+            padding: 12px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 25px;
+            cursor: pointer;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .right input[type="text"], .right input[type="password"] {
+            width: 80%;
+            padding: 12px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            background-color: transparent;
+            color: white;
+            font-size: 1em;
+        }
+        .right button {
+            width: 80%;
+            padding: 12px;
+            background-color: #0056ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        
+        .right .metamask-btn img {
+            width: 30px;
+            height: 30px;
+        }
+        
+        .password-row a {
+            width: 40%;
+            text-decoration: none;
+            color: #007bff;
+            font-size: 0.9em;
+        }
+        
+        .checkbox-container input[type="checkbox"] {
+            width: 15px;
+            height: 15px;
+            margin: 0;
+            accent-color: #0056ff;
+            cursor: pointer;
+        }
+    
+        
+    .divider {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2em;
+        color: #555;
+        position: relative;
+    }
+    
+    .divider::before,
+    .divider::after {
+        content: '';
+        flex: 1;
+        height: 1px;
+        background: #ddd;
+        margin: 0 10px; /* Spacing between text and lines */
+    }
+    
+        }
+
+        @media (min-width: 1500px) {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            display: flex;
+            height: auto;
+            background-color: #000000;
+            margin: 0;
+        }
+        
+        .container {
+            display: flex;
+            width: 100%;
+        }
+        
+        .left {
+            width: 50%;
+            height: auto;
+            background-color: #0056ff;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px;
+            position: relative;
+        }
+        
+        .left .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .left .logo img {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .left .logo h2 {
+            font-size: 1.7em;
+            font-weight: bold;
+        }
+        
+        .left h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .left p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+        
+        .left img {
+            width: 80%;
+            max-width: 5 50px;
+        }
+
+        
+.left #ids {
+    text-align: left;
+    margin-top: 10px; /* Adjust gap between logo and content */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Set consistent spacing between elements */
+}
+
+.left #ids h1 {
+    color: rgba(255, 255, 255, 0.799);
+    font-weight: 1;
+    text-align: left;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+.left #ids p {
+    font-weight: bold;
+    font-size: 2.2em; /* Adjust font size */
+    margin-bottom: 20px; /* Slightly reduce gap */
+}
+
+.left #ids img {
+    width: 110%;
+    max-width: 750px;
+    margin-top: 10px; /* Add controlled spacing below */
+}
+
+        .gapp{
+            text-align: left;
+        }
+        .right {
+            width: 70%;
+            background-color: #000;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 50px 30px 60px 10%;
+            position: relative;
+        }
+        
+        .right .top-right {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        
+        .right .top-right a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        
+        .right .top-right a:hover {
+            text-decoration: underline;
+        }
+        
+        .right h2 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        
+        .right p {
+            margin-bottom: 25px;
+            color: #bbb;
+            font-size: 1.1em;
+        }
+        
+        .right .metamask-btn {
+            width: 70%;
+            background-color:transparent;
+            color: white;
+            border: 1px solid #555;
+            padding: 12px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 25px;
+            cursor: pointer;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        
+        
+        .right .metamask-btn img {
+            width: 20px;
+            height: 20px;
+        }
+        
+        .right .metamask-btn:hover {
+            background-color: #444;
+        }
+        
+        .right form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .right input[type="text"], .right input[type="password"] {
+            width: 70%;
+            padding: 12px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            background-color: transparent;
+            color: white;
+            font-size: 1em;
+        }
+        
+        
+        .right input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        
+        .right label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .right a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        .right a:hover {
+            text-decoration: underline;
+        }
+        
+        .right button {
+            width: 70%;
+            padding: 12px;
+            background-color: #0056ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        
+        .right button:hover {
+            background-color: #0041cc;
+        }
+        
+        .right .footer {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            color: #bbb;
+            font-size: 0.9em;
+        }
+        
+        .right .footer a {
+            color: #bbb;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        
+        .right .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        
+        .centeral{
+            justify-content: center;
+        }
+        
+        /******** row for passwar and forget *****/
+        
+        /******** row for passwar and forget *****/
+        
+        /******** row for passwar and forget *****/
+        
+        .password-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .password-row label {
+            margin-right: 10px;
+        }
+        .password-row a {
+            width: 50%;
+            text-decoration: none;
+            color: #007bff;
+            font-size: 0.9em;
+        }
+        .password-row a:hover {
+            text-decoration: underline;
+        }
+        
+        /******** row for passwar and forget *****/
+        
+        /******** row for passwar and forget *****/
+        .footer-bar {
+            display: none;
+        }
+        .footer-barr {
+            position: relative;
+            margin-top: -30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000;
+            color: #bbb;
+            padding: 10px 20px 30px 20px;
+            font-family: Arial, sans-serif;
+            font-size: 1em;
+        }
+        
+        .footer-barr span {
+            color: #bbb;
+            font-size: 0.9em;
+        }
+        
+        .footer-barr a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .footer-barr a:hover {
+            text-decoration: underline;
+        }
+        
+        .languagee-selector {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-left: auto; /* Push to the right */
+        }
+        
+        .languagee-selector img {
+            width: 20px;
+            height: 15px;
+            border-radius: 2px; /* Optional for rounded edges */
+        }
+        
+        .themee-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            background-color: #444;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-left: 10px; /* Space between flag and moon icon */
+        }
+        
+        .themee-toggle i {
+            color: #fff;
+            font-size: 16px;
+        }
+        
+        .themee-toggle:hover {
+            background-color: #555;
+        }
+        
+        
+        /******** row for passwar and forget *****/
+        /* Improved "Remember Me" Checkbox */
+        .checkbox-container {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        font-size: 0.95em;
+        color: #bbb;
+        cursor: pointer;
+        }
+        
+        .checkbox-container input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+        margin-left: 10px;
+        accent-color: #0056ff;
+        cursor: pointer;
+        }
+        
+        
+        
+        
+        
+        /******** row for passwar and forget *****/
+        
+        /******** row for passwar and forget *****/
+        
+        
+        .divider {
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            color: #555;
+            position: relative;
+        }
+        
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: #ddd;
+            margin: 0 10px; /* Spacing between text and lines */
+        }
+        
+        
+        .footer-bar {
+                display: none;
+            }
+            .footer-barr {
+                position: relative;
+                margin-top: 10px;
+                margin-bottom: 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: transparent;
+                color: #bbb;
+                padding: 10px 20px 30px 20px;
+                font-family: Arial, sans-serif;
+                font-size: 1em;
+            }
+        
+            .footer-barr span {
+                color: #bbb;
+                font-size: 0.9em;
+            }
+        
+            .footer-barr a {
+                color: #007bff;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        
+            .footer-barr a:hover {
+                text-decoration: underline;
+            }
+        
+            .languagee-selector {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                margin-left: auto; /* Push to the right */
+            }
+        
+            .languagee-selector img {
+                width: 20px;
+                height: 15px;
+                border-radius: 2px; /* Optional for rounded edges */
+            }
+        
+            .themee-toggle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 30px;
+                height: 30px;
+                background-color: #444;
+                border-radius: 50%;
+                cursor: pointer;
+                margin-left: 10px; /* Space between flag and moon icon */
+            }
+        
+            .theme-toggle i {
+                color: #fff;
+                font-size: 16px;
+            }
+        
+            .theme-toggle:hover {
+                background-color: #555;
+            }
+        
+        
+            /******** row for passwar and forget *****/
+         /* Improved "Remember Me" Checkbox */
+         .checkbox-container {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            font-size: 0.95em;
+            color: #bbb;
+            cursor: pointer;
+        }
+        
+        .checkbox-container input[type="checkbox"] {
+            width: 15px;
+            height: 15px;
+            margin-left: 10px;
+            accent-color: #0056ff;
+            cursor: pointer;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        /* Footer Styling */
+        .footer {
+            margin-bottom: -10px;
+            overflow: hidden;
+            text-align: right;
+            gap: 0px;
+            padding: 0px -10px;
+            font-family: Arial, sans-serif;
+            position: fixed; /* Keeps footer at the bottom */
+            bottom: 0;
+            width: 26%; /* Ensures full width */
+        }
+        
+        
+        .footer p:hover {
+            text-decoration: underline;
+            color: white;
+        }
+        
+        .footer p {
+            text-decoration: none;
+            color: #007bff;
+            margin: 0;
+            font-size: 0.7em;
+            text-align: right;
+        }
+        
+        
+        
+    }

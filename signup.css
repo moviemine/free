@@ -1,0 +1,2238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #000000;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.left {
+    width: 50%;
+    height: 120vh;
+    background-color: #0056ff;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+}
+
+.left .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.left .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.left .logo h2 {
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.left h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.left p {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+}
+
+.left img {
+    width: 60%;
+    max-width: 350px;
+}
+
+.right {
+    width: 70%;
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 30px 60px 15%;
+    position: relative;
+}
+
+.right .top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.right .top-right a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.right .top-right a:hover {
+    text-decoration: underline;
+}
+
+.right h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.right p {
+    margin-bottom: 25px;
+    color: #bbb;
+    font-size: 1.1em;
+}
+
+.right .metamask-btn {
+    width: 70%;
+    background-color:transparent;
+    color: white;
+    border: 1px solid #555;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+.right .metamask-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.right .metamask-btn:hover {
+    background-color: #444;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right input[type="text"], .right input[type="password"] {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+}
+
+
+.right input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.right label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.right a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.right a:hover {
+    text-decoration: underline;
+}
+
+.right button {
+    width: 70%;
+    padding: 12px;
+    background-color: #0056ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.right button:hover {
+    background-color: #0041cc;
+}
+
+.right .footer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+.right .footer a {
+    color: #bbb;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.right .footer a:hover {
+    text-decoration: underline;
+}
+
+
+.centeral{
+    justify-content: center;
+}
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+.password-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.password-row label {
+    margin-right: 10px;
+}
+.password-row a {
+    width: 50%;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9em;
+}
+.password-row a:hover {
+    text-decoration: underline;
+}
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+
+.divider {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #555;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+    margin: 0 10px; /* Spacing between text and lines */
+}
+
+
+@media (min-width: 290px) and (max-width: 350px) {
+    .left {
+        display: none; /* Hide the left side */
+    }
+
+    
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1.2em;
+    }
+    
+    body {   
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: #fff;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .centeral{
+        justify-content: center;
+    }
+
+
+#non {
+    display: flex;          /* Flexbox layout */
+    flex-direction: row;    /* Row direction (default) */
+    align-items: center;    /* Align items vertically */
+    justify-content: center; /* Center the content horizontally */
+    gap: 10px;              /* Add space between the span and the link */
+}
+
+#non span {
+    color: #ffffff;         /* White text color */
+    font-size: 1em;         /* Adjust font size as needed */
+    text-decoration: none;
+}
+
+#non a {
+    color: #007bff;         /* Blue text for the link */
+    text-decoration: none;  /* Remove underline */
+    font-weight: bold;      /* Optional: Make the link text bold */
+}
+
+#non a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+
+
+
+    .right {
+        margin-top: 13%;
+        width: 100%; /* Right side takes full width */
+        background-color: #000;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        padding: 30px 10px 60px 10px;
+        position: relative;
+    }
+    
+.right .top-right {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+
+.right .top-right a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.right .top-right a:hover {
+    text-decoration: underline;
+}
+
+.right h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.right p {
+    margin-bottom: 25px;
+    color: #bbb;
+    font-size: 1.1em;
+}
+
+.right .metamask-btn {
+    width: 100%;
+    background-color:transparent;
+    color: white;
+    border: 1px solid #555;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+.right .metamask-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.right .metamask-btn:hover {
+    background-color: #444;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right input[type="text"], .right input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+}
+
+
+.right input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.right label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.right a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.right a:hover {
+    text-decoration: underline;
+}
+
+.right button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0056ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.right button:hover {
+    background-color: #0041cc;
+}
+
+.right .footer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+.right .footer a {
+    color: #bbb;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.right .footer a:hover {
+    text-decoration: underline;
+}
+
+
+.centeral{
+    justify-content: center;
+}
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+.password-row {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.password-row label {
+    margin-right: 10px;
+}
+.password-row a {
+    width: 50%;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9em;
+}
+.password-row a:hover {
+    text-decoration: underline;
+}
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+
+.divider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #555;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+    margin: 0 10px; /* Spacing between text and lines */
+}
+
+
+}
+
+@media (min-width: 350px) and (max-width: 450px) {
+    .left {
+        display: none; /* Hide the left side */
+    }
+    
+    body {   
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: #fff;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .centeral{
+        justify-content: center;
+    }
+
+
+#non {
+    display: flex;          /* Flexbox layout */
+    flex-direction: row;    /* Row direction (default) */
+    align-items: center;    /* Align items vertically */
+    justify-content: center; /* Center the content horizontally */
+    gap: 10px;              /* Add space between the span and the link */
+}
+
+#non span {
+    color: #ffffff;         /* White text color */
+    font-size: 1em;         /* Adjust font size as needed */
+    text-decoration: none;
+}
+
+#non a {
+    color: #007bff;         /* Blue text for the link */
+    text-decoration: none;  /* Remove underline */
+    font-weight: bold;      /* Optional: Make the link text bold */
+}
+
+#non a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1.2em;
+    }
+
+    .right {
+        margin-top: 13%;
+        width: 100%; /* Right side takes full width */
+        background-color: #000;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        padding: 50px 20px 60px 20px;
+        position: relative;
+    }
+    
+.right .top-right {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+
+.right .top-right a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.right .top-right a:hover {
+    text-decoration: underline;
+}
+
+.right h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.right p {
+    margin-bottom: 25px;
+    color: #bbb;
+    font-size: 1.1em;
+}
+
+.right .metamask-btn {
+    width: 100%;
+    background-color:transparent;
+    color: white;
+    border: 1px solid #555;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+.right .metamask-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.right .metamask-btn:hover {
+    background-color: #444;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right input[type="text"], .right input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+}
+
+
+.right input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.right label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.right a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.right a:hover {
+    text-decoration: underline;
+}
+
+.right button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0056ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.right button:hover {
+    background-color: #0041cc;
+}
+
+.right .footer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+.right .footer a {
+    color: #bbb;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.right .footer a:hover {
+    text-decoration: underline;
+}
+
+
+.centeral{
+    justify-content: center;
+}
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+.password-row {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.password-row label {
+    margin-right: 10px;
+}
+.password-row a {
+    width: 50%;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9em;
+}
+.password-row a:hover {
+    text-decoration: underline;
+}
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+
+.divider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #555;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+    margin: 0 10px; /* Spacing between text and lines */
+}
+
+
+}
+
+@media (min-width: 450px) and (max-width: 550px) {
+    .left {
+        display: none; /* Hide the left side */
+    }
+    
+    body {   
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: #fff;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .centeral{
+        justify-content: center;
+    }
+
+
+#non {
+    display: flex;          /* Flexbox layout */
+    flex-direction: row;    /* Row direction (default) */
+    align-items: center;    /* Align items vertically */
+    justify-content: center; /* Center the content horizontally */
+    gap: 10px;              /* Add space between the span and the link */
+}
+
+#non span {
+    color: #ffffff;         /* White text color */
+    font-size: 1em;         /* Adjust font size as needed */
+    text-decoration: none;
+}
+
+#non a {
+    color: #007bff;         /* Blue text for the link */
+    text-decoration: none;  /* Remove underline */
+    font-weight: bold;      /* Optional: Make the link text bold */
+}
+
+#non a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1.2em;
+    }
+
+    .right {
+        margin-top: 13%;
+        width: 100%; /* Right side takes full width */
+        background-color: #000;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        padding: 50px 20px 60px 20px;
+        position: relative;
+    }
+    
+.right .top-right {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+
+.right .top-right a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.right .top-right a:hover {
+    text-decoration: underline;
+}
+
+.right h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.right p {
+    margin-bottom: 25px;
+    color: #bbb;
+    font-size: 1.1em;
+}
+
+.right .metamask-btn {
+    width: 100%;
+    background-color:transparent;
+    color: white;
+    border: 1px solid #555;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+.right .metamask-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.right .metamask-btn:hover {
+    background-color: #444;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right input[type="text"], .right input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+}
+
+
+.right input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.right label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.right a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.right a:hover {
+    text-decoration: underline;
+}
+
+.right button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0056ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.right button:hover {
+    background-color: #0041cc;
+}
+
+.right .footer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+.right .footer a {
+    color: #bbb;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.right .footer a:hover {
+    text-decoration: underline;
+}
+
+
+.centeral{
+    justify-content: center;
+}
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+.password-row {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.password-row label {
+    margin-right: 10px;
+}
+.password-row a {
+    width: 50%;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9em;
+}
+.password-row a:hover {
+    text-decoration: underline;
+}
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+
+.divider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #555;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+    margin: 0 10px; /* Spacing between text and lines */
+}
+
+
+}
+
+@media (min-width: 550px) and (max-width: 650px) {
+    .left {
+        display: none; /* Hide the left side */
+    }
+    
+    body {   
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: #fff;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .centeral{
+        justify-content: center;
+    }
+
+
+#non {
+    display: flex;          /* Flexbox layout */
+    flex-direction: row;    /* Row direction (default) */
+    align-items: center;    /* Align items vertically */
+    justify-content: center; /* Center the content horizontally */
+    gap: 10px;              /* Add space between the span and the link */
+}
+
+#non span {
+    color: #ffffff;         /* White text color */
+    font-size: 1em;         /* Adjust font size as needed */
+    text-decoration: none;
+}
+
+#non a {
+    color: #007bff;         /* Blue text for the link */
+    text-decoration: none;  /* Remove underline */
+    font-weight: bold;      /* Optional: Make the link text bold */
+}
+
+#non a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1.2em;
+    }
+
+    .right {
+        margin-top: 13%;
+        width: 100%; /* Right side takes full width */
+        background-color: #000;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        padding: 40px 70px 60px 70px;
+        position: relative;
+    }
+    
+.right .top-right {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+
+.right .top-right a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.right .top-right a:hover {
+    text-decoration: underline;
+}
+
+.right h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.right p {
+    margin-bottom: 25px;
+    color: #bbb;
+    font-size: 1.1em;
+}
+
+.right .metamask-btn {
+    width: 100%;
+    background-color:transparent;
+    color: white;
+    border: 1px solid #555;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+.right .metamask-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.right .metamask-btn:hover {
+    background-color: #444;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right input[type="text"], .right input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+}
+
+
+.right input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.right label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.right a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.right a:hover {
+    text-decoration: underline;
+}
+
+.right button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0056ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.right button:hover {
+    background-color: #0041cc;
+}
+
+.right .footer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+.right .footer a {
+    color: #bbb;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.right .footer a:hover {
+    text-decoration: underline;
+}
+
+
+.centeral{
+    justify-content: center;
+}
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+.password-row {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.password-row label {
+    margin-right: 10px;
+}
+.password-row a {
+    width: 50%;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9em;
+}
+.password-row a:hover {
+    text-decoration: underline;
+}
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+
+.divider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #555;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+    margin: 0 10px; /* Spacing between text and lines */
+}
+
+
+}
+
+
+@media (min-width: 650px) and (max-width: 780px) {
+    .left {
+        display: none; /* Hide the left side */
+    }
+    
+    body {   
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: #fff;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .centeral{
+        justify-content: center;
+    }
+
+
+#non {
+    display: flex;          /* Flexbox layout */
+    flex-direction: row;    /* Row direction (default) */
+    align-items: center;    /* Align items vertically */
+    justify-content: center; /* Center the content horizontally */
+    gap: 10px;              /* Add space between the span and the link */
+}
+
+#non span {
+    color: #ffffff;         /* White text color */
+    font-size: 1em;         /* Adjust font size as needed */
+    text-decoration: none;
+}
+
+#non a {
+    color: #007bff;         /* Blue text for the link */
+    text-decoration: none;  /* Remove underline */
+    font-weight: bold;      /* Optional: Make the link text bold */
+}
+
+#non a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1.2em;
+    }
+
+    .right {
+        margin-top: 13%;
+        width: 100%; /* Right side takes full width */
+        background-color: #000;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        padding: 40px 100px 60px 100px;
+        position: relative;
+    }
+    
+.right .top-right {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+
+.right .top-right a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.right .top-right a:hover {
+    text-decoration: underline;
+}
+
+.right h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.right p {
+    margin-bottom: 25px;
+    color: #bbb;
+    font-size: 1.1em;
+}
+
+.right .metamask-btn {
+    width: 100%;
+    background-color:transparent;
+    color: white;
+    border: 1px solid #555;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+.right .metamask-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.right .metamask-btn:hover {
+    background-color: #444;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right input[type="text"], .right input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+}
+
+
+.right input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.right label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.right a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.right a:hover {
+    text-decoration: underline;
+}
+
+.right button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0056ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.right button:hover {
+    background-color: #0041cc;
+}
+
+.right .footer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+.right .footer a {
+    color: #bbb;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.right .footer a:hover {
+    text-decoration: underline;
+}
+
+
+.centeral{
+    justify-content: center;
+}
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+.password-row {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.password-row label {
+    margin-right: 10px;
+}
+.password-row a {
+    width: 50%;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9em;
+}
+.password-row a:hover {
+    text-decoration: underline;
+}
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+/******** row for passwar and forget *****/
+
+
+.divider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #555;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+    margin: 0 10px; /* Spacing between text and lines */
+}
+
+
+}
+
+@media (max-width: 780px) {
+
+    #logog0{
+        
+        margin-top: -10%;
+    }
+.right .logo {
+    position: absolute;
+    top: -10%;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.right .logo h2 {
+    font-size: 1.7em;
+    font-weight: bold;
+}
+}
+@media (max-width: 1780px) {
+ 
+#fronten{
+    margin-top: 10%;
+}
+}
+@media (min-width: 780px) {
+   .logo{
+    display: none;
+   }
+    #non {
+        display: flex;          /* Flexbox layout */
+        flex-direction: row;    /* Row direction (default) */
+        align-items: center;    /* Align items vertically */
+        justify-content: center; /* Center the content horizontally */
+        gap: 10px;              /* Add space between the span and the link */
+    }
+    
+    #non span {
+        color: #ffffff;         /* White text color */
+        font-size: 1em;         /* Adjust font size as needed */
+        text-decoration: none;
+    }
+    
+    #non a {
+        color: #007bff;         /* Blue text for the link */
+        text-decoration: none;  /* Remove underline */
+        font-weight: bold;      /* Optional: Make the link text bold */
+    }
+    
+    #non a:hover {
+        text-decoration: underline; /* Add underline on hover */
+    }
+    
+
+#none{
+    display: none;
+}
+
+.right {
+    width: 100%;
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 20px 60px 8%;
+    position: relative;
+}
+
+
+.right .metamask-btn {
+    width: 90%;
+    background-color:transparent;
+    color: white;
+    border: 1px solid #555;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.right input[type="text"], .right input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+}
+.right button {
+    width: 90%;
+    padding: 12px;
+    background-color: #0056ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.right .metamask-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+.password-row a {
+    width: 40%;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9em;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    accent-color: #0056ff;
+    cursor: pointer;
+}
+}
+@media (min-width: 1000px) {
+
+    #non {
+        display: flex;          /* Flexbox layout */
+        flex-direction: row;    /* Row direction (default) */
+        align-items: center;    /* Align items vertically */
+        justify-content: center; /* Center the content horizontally */
+        gap: 10px;              /* Add space between the span and the link */
+    }
+    
+    #non span {
+        color: #ffffff;         /* White text color */
+        font-size: 1em;         /* Adjust font size as needed */
+        text-decoration: none;
+    }
+    
+    #non a {
+        color: #007bff;         /* Blue text for the link */
+        text-decoration: none;  /* Remove underline */
+        font-weight: bold;      /* Optional: Make the link text bold */
+    }
+    
+    #non a:hover {
+        text-decoration: underline; /* Add underline on hover */
+    }
+      
+    .right {
+        width: 70%;
+        background-color: #000;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 30px 60px 10%;
+        position: relative;
+    }
+    
+    
+    .right .metamask-btn {
+        width: 80%;
+        background-color:transparent;
+        color: white;
+        border: 1px solid #555;
+        padding: 12px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 25px;
+        cursor: pointer;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    .right input[type="text"], .right input[type="password"] {
+        width: 80%;
+        padding: 12px;
+        border: 1px solid #555;
+        border-radius: 5px;
+        background-color: transparent;
+        color: white;
+        font-size: 1em;
+    }
+    .right button {
+        width: 80%;
+        padding: 12px;
+        background-color: #0056ff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+    
+    .right .metamask-btn img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .password-row a {
+        width: 40%;
+        text-decoration: none;
+        color: #007bff;
+        font-size: 0.9em;
+    }
+    
+    .checkbox-container input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+        margin: 0;
+        accent-color: #0056ff;
+        cursor: pointer;
+    }
+
+    
+.divider {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #555;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+    margin: 0 10px; /* Spacing between text and lines */
+}
+
+    }
+    
+    
+      
+@media (min-width: 1200px) {
+    .right {
+        width: 70%;
+        background-color: #000;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px 30px 60px 15%;
+        position: relative;
+    }
+    
+    .right .top-right {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    
+    .right .top-right a {
+        color: #007bff;
+        text-decoration: none;
+        font-size: 1em;
+    }
+    
+    .right .top-right a:hover {
+        text-decoration: underline;
+    }
+    
+    .right h2 {
+        font-size: 2.5em;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+    
+    .right p {
+        margin-bottom: 25px;
+        color: #bbb;
+        font-size: 1.1em;
+    }
+    
+    .right .metamask-btn {
+        width: 70%;
+        background-color:transparent;
+        color: white;
+        border: 1px solid #555;
+        padding: 12px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 25px;
+        cursor: pointer;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    
+    
+    .right .metamask-btn img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .right .metamask-btn:hover {
+        background-color: #444;
+    }
+    
+    .right form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .right input[type="text"], .right input[type="password"] {
+        width: 70%;
+        padding: 12px;
+        border: 1px solid #555;
+        border-radius: 5px;
+        background-color: transparent;
+        color: white;
+        font-size: 1em;
+    }
+    
+    
+    .right input[type="checkbox"] {
+        margin-right: 10px;
+    }
+    
+    .right label {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .right a {
+        color: #007bff;
+        text-decoration: none;
+    }
+    
+    .right a:hover {
+        text-decoration: underline;
+    }
+    
+    .right button {
+        width: 70%;
+        padding: 12px;
+        background-color: #0056ff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+    .password-row a {
+        width: 50%;
+        text-decoration: none;
+        color: #007bff;
+        font-size: 0.9em;
+    }
+.divider {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #555;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+    margin: 0 10px; /* Spacing between text and lines */
+}
+}    
+
+
+@media (min-width: 800px) {
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 50px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 850px) {
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 55px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1em;
+    }
+}
+
+
+@media (min-width: 900px) {
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 60px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1em;
+    }
+}
+
+
+
+@media (min-width: 950px) {
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 60px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+
+@media (min-width: 1000px) {
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 110px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1em;
+    }
+}
+
+
+
+@media (min-width: 1050px) {
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 113px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1.2em;
+    }
+}
+
+
+
+@media (min-width: 1100px) {
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 117px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1.2em;
+    }
+}
+
+
+
+@media (min-width: 1150px) {
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 120px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1.2em;
+    }
+
+}
+
+
+
+
+@media (min-width: 1200px) {
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 163px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1.2em;
+    }
+}
+    @media (min-width: 1250px) {
+        .password-wrapper .toggle-password {
+            position: absolute;
+            top: 50%;
+            right: 169px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #bbb;
+            font-size: 1.2em;
+        }
+}
+
+
+@media (min-width: 1300px) {
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 175px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1.2em;
+    }
+}
+
+
+@media (min-width: 1350px) {
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 185px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1.2em;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 194px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 1450px) {
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 200px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 1500px) {
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 210px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 1550px) {
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 220px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1.2em;
+    }
+}
+@media (min-width: 1600px) {
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 230px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1.2em;
+    }
+}
+@media (min-width: 1650px) {
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 240px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1.2em;
+    }
+}
+@media (min-width: 1700px) {
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 250px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1.2em;
+    }
+}
+
+
+@media (min-width: 1850px) {
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 260px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 1950px) {
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 270px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 2050px) {
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 280px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 2100px) {
+    .password-wrapper .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 290px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #bbb;
+        font-size: 1.2em;
+    }
+}

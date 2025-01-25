@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinance Login</title>
+     <!-- Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  
+    <link rel="stylesheet" href="logins.css">
+</head>
+     
+<style>
+    /* Password Input with Eye Icon Inside */
+    .password-wrapper {
+        position: relative;
+        width: 100%;
+    }
+
+    .password-wrapper input {
+        width: 100%;
+        height: 40px;
+        padding-left: 10px;
+        padding-right: 40px; /* Space for eye icon */
+        font-size: 1em;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+
+    .password-wrapper .toggle-password:hover {
+        color: #ffffff;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="logo">
+                <img src="logo1.svg" alt="Logo">
+                <h2>DANCIN</h2>
+            </div>
+            <div id="ids">
+            <h1>Welcome To Dancini</h1>
+            <p>Login to embrace the possibilities</p>
+            <img src="bg2.webp" alt="Illustration">
+        </div>
+        </div> 
+        
+        <div id="fronten" class="right">
+           
+            <div class="footer-bar">
+                <span>Don’t have an account? <a href="signup.html">Sign Up</a></span>
+              
+            </div>
+            <div class="footer-bar">
+                <div class="language-selector">
+                    <img src="us-flag.png" alt="USA Flag">
+                    <span>English</span>
+                </div>
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </div>
+
+            <div class="footer-barr">
+                <span>Don’t have an account? <a href="signup.html">Sign Up</a></span>
+              
+           
+                <div class="languagee-selector">
+                    <img src=   "us-flag.png" alt="USA Flag">
+                    <span>English</span>
+                </div>
+                <div class="themee-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </div>
+
+             <div class="gapp">
+            <h2>Log In</h2>
+            <p>Securely connect to your account</p>
+            </div>
+           
+            <div class="centeral">
+           
+            <div class="metamask-btn">
+                <img src="google.png" alt="Metamask Icon"> Continue with google
+            </div>
+            
+            <div class="metamask-btn">
+                <img src="MetaMask_Fox.svg.png" alt="Metamask Icon"> Continue with Metamask
+            </div>
+            <p class="divider">OR</p>
+
+            <form> <!-- Email Input -->
+                <label style="color: #595959; margin-bottom: -10px;" for="email">Email</label>
+                
+               
+                <input type="text" placeholder="Enter your username or email" required> 
+                
+                <!-- Password Input -->
+                <div class="password-row">
+                    <label style="color: #595959; margin-bottom: -10px;" for="password">Password</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                
+                <div class="password-wrapper">
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                    </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember Me</label>
+                    </div>
+                </div>
+                <a style=".signup-button-link {
+                    text-decoration: none;
+                  }
+                  
+                  .signup-button {
+                    background-color: #007bff;
+                    color: white;
+                    border: none;
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                  }
+                  
+                  .signup-button:hover {
+                    background-color: #0056b3;
+                  }" href="https://kzmloh7ajtfg30ka0swp.lite.vusercontent.net/" class="signup-button-link">
+                    <button type="button" class="signup-button">
+                      Log In
+                    </button>
+                  </a>
+            </form>
+            <br><br>
+            
+</div>
+<br><br><br> <footer class="footer">
+        <div class="footer-content">
+            
+            <p>&copy; <a style="color: #007bff;" href="privacy"> Privacy Policy</a></p>
+        </div>
+    </footer>
+
+            
+        </div>
+    </div>
+
+
+   
+    <script>
+        function togglePassword() {
+    const passwordField = document.getElementById('password');
+    const passwordToggle = document.querySelector('.toggle-password');
+    if (passwordField.type === 'password') {
+        passwordField.type = 'text';
+        passwordToggle.classList.remove('fa-eye');
+        passwordToggle.classList.add('fa-eye-slash');
+    } else {
+        passwordField.type = 'password';
+        passwordToggle.classList.remove('fa-eye-slash');
+        passwordToggle.classList.add('fa-eye');
+    }
+}
+
+    </script>
+</body>
+</html>
